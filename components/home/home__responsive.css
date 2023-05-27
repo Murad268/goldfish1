@@ -1,0 +1,45 @@
+@import '../../assets/styles/main.css';
+.header__hamburger {
+   width: 18px;
+   height: 15.75px;
+   display: none;
+   flex-direction: column;
+   row-gap: 4.25px;
+   cursor: pointer;
+}
+.header__hamburger span {
+   display: block;
+   height: 2.25px;
+   background-color: var(--color1);
+   width: 100%;
+}
+@media(max-width: 1190px) {
+   .header__top__search {
+      width: 350px;
+   }
+}
+
+@media(max-width: 991px) {
+   .header__top__search {
+      display: none;
+   }
+}
+
+
+@media(max-width: 600px) {
+   .header__hamburger {
+      display: flex;
+   }
+   .header__top__num {
+      display: none;
+   }
+   .header__top__logo {
+      width: 121px;
+      height: 28px;
+   }
+   .header__top__num img, .header__top__user img {
+      width: 20px;
+      height: 19.17px;
+      object-fit: fill;
+   }
+}

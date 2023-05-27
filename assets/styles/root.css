@@ -1,0 +1,20 @@
+:root {
+      --main-font-family1: "Trebuchet MS";
+      --color1: white;
+      --color2: #2A2A2A;
+      --color3: #363636;
+      --color4: #F9A43F;
+}
+
+
+.container {
+   max-width: 1110px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+@media(max-width: 1110px) {
+   .container {
+      padding: 0 32px;
+   }
+}
