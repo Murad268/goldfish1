@@ -1,4 +1,5 @@
 @import '../../assets/styles/main.css';
+/* header__top */
 .header__top {
    background-color: var(--color2);
    padding: 24px 0;
@@ -80,4 +81,53 @@
    width: 30px;
    height: 28.3px;
    object-fit: fill;
+}
+
+
+
+/* navbar */
+
+.navbar__wrapper, .navbar__links, .navbar__links>ul,  .navbar__social>ul {
+   display: flex;
+   align-items: center
+}
+.navbar__wrapper {
+   justify-content: space-between;
+   padding: 16px 0;
+}
+.navbar__links {
+   column-gap: 86px
+}
+.navbar__links>ul {
+   column-gap: 69px
+}
+.navbar__social>ul {
+   column-gap: 10.89px
+}
+.navbar__links a {
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: var(--color2)
+}
+.navbar__links__hamburger {
+   display: flex;
+   align-items: center;
+   column-gap: 14px
+}
+.navbar__links__hamburger__btn {
+   width: 16px;
+   height: 14px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 4.25px;
+   cursor: pointer;
+}
+.navbar__links__hamburger__btn span {
+   display: block;
+   height: 2.25px;
+   background-color: var(--color2);
+   width: 100%;
 }
