@@ -797,3 +797,127 @@
    border: none;
    margin-top: 21px;
 }
+
+.contacts__info__more__form__link, .contacts__info__more__form__link a {
+   font-family: var(--main-font-family1);
+   color: var(--color2);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 91.1%;
+}
+
+
+/* footer */
+.footer {
+   margin-top: 85px;
+   background: var(--color2);
+   padding: 64px 0 34px 0;
+}
+.footer__top {
+   justify-content: space-between;
+   display: flex;
+}
+.footer__top__links {
+   display: flex;
+   column-gap: 52px
+}
+.footer__top__links>ul {
+   display: flex;
+   flex-direction: column;
+   max-width: 151px;
+}
+
+.footer__list__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: var(--color1);
+   font-family: var(--main-font-family1);
+   margin-bottom: 9px;
+}
+
+.footer__catalog a {
+   font-weight: 400 !important;
+   font-size: 16px !important;
+   line-height: 20px !important;
+}
+
+.footer__top__links>ul a {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 30px;
+   color: var(--color1);
+   font-family: var(--main-font-family1);
+}
+
+.footer__top__left__adress, .footer__top__left__adress__none {
+   color: var(--color1);
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   max-width: 214px;
+}
+.footer__top__left__adress__none {
+   display: none;
+}
+.footer__right__btn {
+   width: 225px;
+   height: 51px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: var(--color4);
+   font-family: var(--main-font-family1);
+   border: 1px solid var(--color4);
+   border-radius: 9px;
+   margin-bottom: 40px;
+}
+.footer__right__phone {
+   margin-bottom: 8px;
+}
+.footer__right__phone, .footer__right__email {
+   display: block;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   font-family: var(--main-font-family1);
+   color: var(--color1);
+}
+
+.footer__top__left__logo {
+   width: 152px;
+   height: 36px;
+   margin-bottom: 16px;
+}
+
+.footer__top__left__logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+}
+
+.footer__right__social {
+   margin-top: 21px;
+   display: flex;
+   column-gap: 11px
+}
+
+.footer__right {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.footer__el {
+   display: flex;
+}
