@@ -12,9 +12,25 @@
    margin: 0 auto;
    width: 100%;
 }
+.section__title {
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 37px;
+   color: var(--color2)
+}
 
 @media(max-width: 1110px) {
    .container {
       padding: 0 32px;
+   }
+}
+
+
+@media(max-width: 450px) {
+   .section__title {
+      font-size: 21px;
+      line-height: 24px;
    }
 }

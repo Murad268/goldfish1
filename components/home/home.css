@@ -250,3 +250,152 @@
    column-gap: 13px;
    grid-template-columns: repeat(2, 1fr);
 }
+
+
+/* try */ 
+
+.try__carusel {
+   margin-top: 21px;
+}
+.try__carusel {
+   margin: 0 -15px;
+   margin-top: 21px;
+
+}
+.try__carusel .slick-slide {
+   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+   border-radius: 9px;
+   margin: 0 15px;
+   padding-top: 26px;
+
+}
+
+.try__carusel__item {
+   height: 409px;
+   position: relative;
+}
+.try__carusel__item__footer {
+   position: absolute;
+   width: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 25px;
+}
+.try__carusel__item__img {
+   width: max-content;
+   margin: 0 auto;
+   height: 168px;
+}
+.try__carusel__item__img img {
+   height: 100%;
+   object-fit: fill;
+}
+.try__carusel__item__info, .try__carusel__item__info__column {
+   display: flex;
+   align-items: center;
+}
+.try__carusel__item__info {
+   column-gap: 23px;
+   width: max-content;
+   margin: 0 auto;
+
+}
+.try__carusel__item__info__column {
+   column-gap: 6px
+}
+
+.try__carusel__item__info__column__txt {
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 13px;
+   color: var(--color2)
+}
+
+.try__carusel__item__title {
+   font-family: var(--main-font-family1);
+   color: var(--color2);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 128.68%;
+   max-width: 155px;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 10px;
+}
+
+.try__carusel__item__price {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 24px;
+   font-family: var(--main-font-family1);
+   color: var(--color2);
+   text-align: center;
+}
+
+.add__cart {
+   max-width: 163px;
+   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+   border-radius: 9px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   font-family: var(--main-font-family1);
+   color: var(--color1);
+   display: flex;
+   align-items: center;
+   height: 34px;
+   padding-left: 29px;
+   column-gap: 8.65px;
+   margin: 0 auto;
+}
+
+.try__carusel__item__btns {
+   margin-top: 11px;
+}
+.try__carusel {
+   position: relative;
+}
+.butOneClick {
+   max-width: 163px;
+   border-radius: 9px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   font-family: var(--main-font-family1);
+   color: var(--color4);
+   border: 1px solid var(--color4);
+   display: flex;
+   align-items: center;
+   height: 34px;
+   padding-left: 29px;
+   column-gap: 8.65px;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+.try .container {
+   position: relative;
+}
+.try .try__carusel__left {
+   position: absolute;
+   top: 50%;
+   left: -48px;
+   cursor: pointer;
+}
+
+.try .try__carusel__right {
+   position: absolute;
+   top: 50%;
+   right: -48px;
+
+   cursor: pointer;
+}
+
+.special__try {
+   margin-top: 85px;
+}
