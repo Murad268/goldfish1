@@ -49,6 +49,26 @@
 }
 
 @media(max-width: 991px) {
+   .contacts__wrapper {
+      column-gap: 120px;
+      display: grid;
+      row-gap: 20px;
+      grid-template-areas:
+      "info"
+      "map"
+      "map"
+      "map"
+      "map"
+      "more";
+    
+   }
+   .contacts__map {
+      width: 100%;
+      height: 450px;
+   }
+   .contacts__map iframe {
+      height: 100%;
+   }
    .about__wrapper {
       width: 100%;
       flex-direction: column-reverse;
@@ -163,6 +183,10 @@
    }
 }
 @media(max-width: 440px) {
+   .contacts__map {
+      width: 100%;
+      height: 236px !important;
+   }
    .moreInfo__item__btn {
       width: 220px;
       height: 47px;
