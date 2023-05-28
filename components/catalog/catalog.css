@@ -24,25 +24,7 @@
    padding-top: 47px;
    padding-bottom: 76px;
 }
-.page__links {
-   margin-top: 30px;
-   margin-bottom: 9px;
-}
-.page__links__wrapper {
-   display: flex;
-   column-gap: 20px;
-   align-items: center;
-}
 
-.page__links__wrapper a {
-   display: block;
-   font-family: var(--main-font-family1);
-   font-style: normal;
-   color: var(--color2);
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 19px;
-}
 
 
 

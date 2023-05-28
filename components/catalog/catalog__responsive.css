@@ -11,9 +11,7 @@
       width: 100%;
       grid-template-columns: 1fr;
    }
-   .page__links {
-      display: none;
-   }
+  
    .section__title {
       margin-top: 30px;
    }

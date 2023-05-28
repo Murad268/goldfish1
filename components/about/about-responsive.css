@@ -1,0 +1,21 @@
+@media(max-width: 850px) {
+   .about__page__column:first-child {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+   }
+   .about__page__column:last-child {
+      flex-direction: column !important;
+      row-gap: 20px;
+   }
+}
+
+
+
+@media(max-width: 550px) {
+  .about__page__top__images {
+   column-gap: 15px
+  }
+ .about__page__top__images>div {
+   height: 208px;
+ }
+}

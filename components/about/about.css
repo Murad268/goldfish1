@@ -1,0 +1,53 @@
+@import '../../assets/styles/main.css';
+.about__page__columns {
+   display: flex;
+   flex-direction: column;
+   row-gap: 68px;
+   margin-top: 30px;
+}
+.about__page__column {
+   display: flex;
+   align-items: center;
+   column-gap: 30px
+}
+
+.about__page__column>div {
+   flex: 1;
+}
+
+.about__page__top__images {
+   display: flex;
+   column-gap: 20px;
+}
+.about__page__top__images div {
+   height: 322px;
+   flex: 1;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.about__page__top__images div img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   object-fit: cover;
+}
+
+.about__page__top__desc__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   font-family: var(--main-font-family1);
+   color: var(--color2);
+   margin-bottom: 16px;
+}
+
+.about__page__top__desc p {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+}

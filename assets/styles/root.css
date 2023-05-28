@@ -537,7 +537,25 @@
 .search__bottom__container {
    display: none;
 }
+.page__links {
+   margin-top: 30px;
+   margin-bottom: 9px;
+}
+.page__links__wrapper {
+   display: flex;
+   column-gap: 20px;
+   align-items: center;
+}
 
+.page__links__wrapper a {
+   display: block;
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   color: var(--color2);
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+}
 
 @media(max-width: 1190px) {
    .header__top__search {
@@ -589,6 +607,9 @@
 
 
 @media(max-width: 600px) {
+   .page__links {
+      display: none;
+   }
    .footer__top__left__adress {
       margin: 0 auto;
    }
