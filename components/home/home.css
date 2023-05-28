@@ -625,3 +625,37 @@
 .moreInfo .section__title {
    margin-bottom: 10px;
 }
+
+
+/* about */
+.about {
+   padding-top: 85px;
+}
+
+.about__wrapper {
+   display: flex;
+   align-items: center;
+   column-gap: 25px
+}
+
+.about__desc, .about__image {
+   flex: 1;
+}
+.about__image {
+   border-radius: 10px;
+   overflow: hidden;
+}
+.about__desc__text {
+   margin-top: 21px;
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: justify;
+   color: var(--color2)
+}
+.about__image img {
+   width: 100%;
+   object-fit: fill;
+}

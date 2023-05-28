@@ -131,7 +131,7 @@ $('.header__carusel').slick({
 
 
 
- if(window.innerWidth < 1160) {
+
    $('.moreInfo__wrapper').slick({
       infinite: true,
       dots: false,
@@ -155,4 +155,4 @@ $('.header__carusel').slick({
          }
       ]
     });
- }
+ 

@@ -49,6 +49,14 @@
 }
 
 @media(max-width: 991px) {
+   .about__wrapper {
+      width: 100%;
+      flex-direction: column-reverse;
+      row-gap: 20px;
+   }
+   .about__image {
+      width: 100%;
+   }
    .events__wrapper {
       flex-direction: column;
       row-gap: 30px;
