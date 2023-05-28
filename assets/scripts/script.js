@@ -178,3 +178,88 @@ catalog__page__filtersBoxes.forEach(box => {
       box.classList.add('active')
    })
 })
+
+
+
+
+   $(".count__price #myRange").ionRangeSlider({
+     
+         min: 10,
+         max: 100,
+         from: 30,
+         to: 80,
+         type: "double",
+         step: 10,
+         min_interval: 0,
+         max_interval: 0,
+         drag_interval: false,
+         values: [],
+         p_values: [],
+         from_fixed: false,
+         from_min: null,
+         from_max: null,
+         from_shadow: false,
+         to_fixed: false,
+         to_min: null,
+         to_max: null,
+         to_shadow: false,
+         force_edges: false,
+         keyboard: false,
+         keyboard_step: 5,
+         grid: false,
+         grid_num: 4,
+         grid_snap: false,
+         hide_min_max: true, 
+         hide_from_to: true,
+         decorate_both: true,
+         values_separator: " — ",
+         disable: false,
+         onStart: null,
+         onChange: null,
+         onFinish: null,
+         onUpdate: null
+   })
+       
+   $(".count__aut #myRange").ionRangeSlider({
+     
+      min: 10,
+      max: 100,
+      from: 30,
+      to: 80,
+      type: "double",
+      step: 10,
+      min_interval: 0,
+      max_interval: 0,
+      drag_interval: false,
+      values: [],
+      p_values: [],
+      from_fixed: false,
+      from_min: null,
+      from_max: null,
+      from_shadow: false,
+      to_fixed: false,
+      to_min: null,
+      to_max: null,
+      to_shadow: false,
+      force_edges: false,
+      keyboard: false,
+      keyboard_step: 5,
+      grid: false,
+      grid_num: 4,
+      grid_snap: false,
+      hide_min_max: true, 
+      hide_from_to: true,
+      decorate_both: true,
+      values_separator: " — ",
+      disable: false,
+      onStart: null,
+      onChange: null,
+      onFinish: null,
+      onUpdate: null
+})
+
+ const fileringBtn = document.querySelector(".filering")
+ const filterMenu = document.querySelector('.catalog__page__filter')
+ fileringBtn.addEventListener('click', () => {
+   filterMenu.classList.toggle('active')
+ })

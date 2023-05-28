@@ -52,11 +52,11 @@
    margin-top: 21px;
    display: grid;
    grid-template-columns: 1fr 3fr;
-   column-gap: 61px
+   column-gap: 40px
 }
 .catalog__page__goods {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
    gap: 30px
 }
 
@@ -70,6 +70,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   
 }
 
 .filter__box {
@@ -88,4 +89,102 @@
 
 .catalog__page__filter a.active {
    color: var(--color4)
+}
+.catalog__page__filter {
+   transition: 0.3s;
+   height: max-content;
+}
+
+.filter__price__count, .filter__price__count>div {
+   display: flex;
+   align-items: center
+}
+.filter__price__count {
+   column-gap: 20px
+}
+.filter__price__count>div {
+   column-gap: 10px
+}
+.filter__price__count>div input {
+   border: 1px solid rgba(0, 0, 0, 0.38);
+   border-radius: 9px;
+   padding-left: 9px;
+   width: 65px;
+   height: 27px;
+}
+.irs-bar {
+   background-color: var(--color2) !important; 
+} 
+
+.irs-grid, .irs-bar, .irs-line {
+   height: 3px !important;
+}
+.irs-handle {
+   width: 9px !important;
+   height: 9px !important;
+   border-radius: 100% !important;
+   background-color: var(--color2) !important
+}
+.irs-handle i {
+   background-color: var(--color2) !important
+}
+
+.filter__price__check, .filter__aut__check, .filter__have {
+   display: flex;
+   align-items: center;
+   column-gap: 20px
+}
+.filter__price__check {
+   margin-top: 26px;
+}
+.filter__price__check input, .filter__aut__check input, .filter__have input {
+   opacity: 0.38;
+   width: 21px;
+   height: 21px;
+   border: 1px solid #2A2A2A;
+   border-radius: 7px;
+}
+
+.filter__price__check label, .filter__aut__check label, .filter__have label {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   font-family: var(--main-font-family1);
+   color: var(--color2);
+}
+
+.filter__price__check {
+   margin-bottom: 17px;
+}
+.filter__hr {
+   margin: -10px 0;
+   border: 1px solid rgba(42, 42, 42, 0.12);
+}
+
+.catalog__page__filter {
+   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+   border-radius: 9px;
+}
+.catalog__page__filter ul {
+   padding: 24px 24px;
+}
+
+.filter__trigger {
+   margin-bottom: 23px;
+}
+
+.filering {
+   display: flex;
+   column-gap: 7px;
+   align-items: center;
+   display: none;
+   cursor: pointer;
+}
+.filering .section__title span {
+   text-decoration: underline !important;
+}
+
+.catalog__page__filter.active {
+   display: none;
 }
