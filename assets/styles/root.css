@@ -653,4 +653,7 @@
       font-size: 21px;
       line-height: 24px;
    }
+   .footer {
+      margin-top: 35px;
+   }
 }

@@ -36,7 +36,16 @@
    }
    
 }
-
+@media(max-width: 400px) {
+   .acordeon-cabecera {
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .acordeon-contenido {
+      font-size: 16px;
+      line-height: 19px;
+   }
+}
 
 @media(max-width: 350px) {
    .catalog__page {

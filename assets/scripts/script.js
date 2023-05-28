@@ -263,3 +263,9 @@ catalog__page__filtersBoxes.forEach(box => {
  fileringBtn.addEventListener('click', () => {
    filterMenu.classList.toggle('active')
  })
+
+ $(".acordeon").on("click", ".acordeon-cabecera", function() {
+   $(this).toggleClass("active").next().slideToggle();
+   $(".acordeon-cabecera i").toggleClass("active__arr");
+   $(this).toggleClass("acc__title__active")
+ });
