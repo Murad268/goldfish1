@@ -12,3 +12,11 @@ ul, ol {
    list-style-type: none;
 }
 
+.section__title {
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 37px;
+   color: var(--color2)
+}
