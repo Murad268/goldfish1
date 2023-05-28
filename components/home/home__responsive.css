@@ -126,17 +126,17 @@
    .try .container {
       overflow: visible;
    }
-   .try .try__carusel__left {
+   .try .try__carusel__left, .special__try__left {
       left: 5px;
       width: 6.71px;
       height: 13.42px;
    }
-   .try .try__carusel__right {
+   .try .try__carusel__right, .special__try__right {
       right: 5px;
       width: 6.71px;
       height: 13.42px;
    }
-   .try__carusel__left img, .try__carusel__right img {
+   .try__carusel__left img, .try__carusel__right img, .special__try__left img, .special__try__right img {
       width: 100%;
       height: 100%;
       object-fit: fill;

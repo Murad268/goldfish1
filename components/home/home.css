@@ -253,7 +253,9 @@
 
 
 /* try */ 
-
+.try {
+   height: max-content;
+}
 .try__carusel {
    margin-top: 21px;
 }
@@ -269,7 +271,9 @@
    padding-top: 26px;
 
 }
-
+/* .try .slick-list .draggable {
+   height: 1200px !important;
+} */
 .try__carusel__item {
    height: 409px;
    position: relative;
@@ -381,14 +385,14 @@
 .try .container {
    position: relative;
 }
-.try .try__carusel__left {
+.try .try__carusel__left, .special__try__left {
    position: absolute;
    top: 50%;
    left: -48px;
    cursor: pointer;
 }
 
-.try .try__carusel__right {
+.try .try__carusel__right, .special__try__right {
    position: absolute;
    top: 50%;
    right: -48px;
@@ -397,5 +401,10 @@
 }
 
 .special__try {
-   margin-top: 85px;
+   padding-top: 85px;
+   position: relative;
+}
+
+.main__try .slick-list, .special__try .slick-list {
+   height: 420px !important;
 }
