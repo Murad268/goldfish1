@@ -149,6 +149,11 @@
       margin-bottom: 17.45px;
    }
 }
+@media(max-width: 520px) {
+   .moreInfo__item {
+      height: 390px !important;
+   }
+}
 @media(max-width: 440px) {
    .moreInfo__item__btn {
       width: 220px;
@@ -156,7 +161,7 @@
   
    }
    .moreInfo__item {
-      height: 343px;
+      height: 308px !important;
    }
    .catalog__wrapper__left .catalog__item__link {
       height: 120px !important;
@@ -168,6 +173,9 @@
 
 
 @media(max-width: 390px) {
+   .moreInfo__item {
+      height: 310px !important;
+   }
    .try .container {
       overflow: visible;
    }
@@ -188,8 +196,17 @@
    }
 }
 @media(max-width: 350px) {
+   .moreInfo__item {
+      height: 240px !important;
+   }
    .header__slide__box {
       left: 20px;
+   }
+   .moreInfo__item__box__title {
+      font-size: 14px;
+   }
+   .moreInfo__item__box__desc {
+      font-size: 12px;
    }
 }
 
