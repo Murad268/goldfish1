@@ -49,6 +49,10 @@
 }
 
 @media(max-width: 991px) {
+   .events__wrapper {
+      flex-direction: column;
+      row-gap: 30px;
+   }
    .header__top__search {
       display: none;
    }
@@ -81,6 +85,26 @@
 }
 
 @media(max-width: 600px) {
+   .event__box__top__name {
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .event__box__top__date {
+      font-size: 14px;
+      line-height: 19px;
+   }
+   .event__box__text {
+      font-size: 14px;
+      line-height: 131.11%;
+   }
+   .event {
+      width: 280px;
+      height: 287px;
+   }
+   .event__box__top {
+      flex-direction: column;
+      align-items: flex-start;
+   }
    .catalog__wrapper__right .catalog__item__link {
       height: 150px;
    }

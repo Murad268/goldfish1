@@ -269,7 +269,6 @@
    border-radius: 9px;
    margin: 0 15px;
    padding-top: 26px;
-
 }
 /* .try .slick-list .draggable {
    height: 1200px !important;
@@ -443,7 +442,7 @@
    justify-content: center;
    align-items: center;
    border-radius: 14px;
-   font-family: 'Open Sans';
+   font-family: var(--main-font-family2);;
    font-style: normal;
    font-weight: 600;
    font-size: 16px;
@@ -452,4 +451,92 @@
    position: absolute;
    top: 20px;
    right: 21px;
+}
+
+
+/* events */
+.events .section__title {
+   margin-bottom: 21px;
+}
+.events__wrapper {
+   display: flex;
+   column-gap: 15px;
+   margin: 0 -15px;
+}
+
+.event {
+   margin: 0 15px;
+   height: 394px;
+   flex: 1;
+   border-radius: 10px;
+   overflow: hidden;
+   display: block;
+   position: relative;
+}
+.event__box {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: rgba(42, 42, 42, 0.79);
+   padding: 22px 17px 22px 28px
+}
+.events {
+   padding-top: 85px;
+}
+.event img {
+   width: 100%;
+   height: 100%;
+}
+
+.event__box__top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.event__box__top__name {
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: var(--color4)
+}
+
+.event__box__top__date {
+   font-family: var(--main-font-family2);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   color: var(--color1)
+}
+
+.event__box__text {
+   margin-top: 11px;
+   font-family: var(--main-font-family2);
+   color: var(--color1);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+}
+
+.events__laod {
+   width: 170px;
+   height: 37px;
+   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+   border-radius: 9px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   font-family: var(--main-font-family1);
+   color: var(--color1);
+   margin: 0 auto;
+   margin-top: 25px;
 }
