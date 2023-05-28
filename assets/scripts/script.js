@@ -128,3 +128,31 @@ $('.header__carusel').slick({
       // ]
     });
  }
+
+
+
+ if(window.innerWidth < 1160) {
+   $('.moreInfo__wrapper').slick({
+      infinite: true,
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      arrows: false,
+     
+      responsive: [
+         {
+            breakpoint: 930,
+            settings: {
+               slidesToShow: 2
+             }
+         },
+         {
+            breakpoint: 520,
+            settings: {
+               slidesToShow: 1
+             }
+         }
+      ]
+    });
+ }
