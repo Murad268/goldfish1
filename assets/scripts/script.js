@@ -258,11 +258,19 @@ catalog__page__filtersBoxes.forEach(box => {
       onUpdate: null
 })
 
- const fileringBtn = document.querySelector(".filering")
- const filterMenu = document.querySelector('.catalog__page__filter')
- fileringBtn.addEventListener('click', () => {
-   filterMenu.classList.toggle('active')
- })
+//  const fileringBtn = document.querySelector(".filering")
+//  const filterMenu = document.querySelector('.catalog__page__filter')
+//  fileringBtn.addEventListener('click', () => {
+//    filterMenu.classList.toggle('active')
+//  })
+
+
+
+const fileringBtn = document.querySelector(".blogs__page .section__title i")
+const filterMenu = document.querySelector('.blogs__item__filter')
+fileringBtn.addEventListener('click', () => {
+  filterMenu.classList.toggle('active')
+})
 
  $(".acordeon").on("click", ".acordeon-cabecera", function() {
    $(this).toggleClass("active").next().slideToggle();

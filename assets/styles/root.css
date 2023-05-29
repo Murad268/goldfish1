@@ -6,7 +6,9 @@
       --color3: #363636;
       --color4: #F9A43F;
 }
-
+input[type=checkbox] {
+   accent-color: var(--color1);
+ }
 /* header__top */
 .header__top {
    background-color: var(--color2);
