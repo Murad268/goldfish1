@@ -1,9 +1,10 @@
 @import '../../assets/styles/main.css';
-
+@import '../../components/home/home.css';
 
 .event__page__wrapper {
    display: flex;
-   column-gap: 27px
+   column-gap: 27px;
+   margin-bottom: 85px
 }
 
 .event_page__text {
@@ -97,4 +98,15 @@
    height: 49px;
    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
    border-radius: 9px;
+}
+
+
+.interest__events__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+   margin-bottom: 8px;
 }
