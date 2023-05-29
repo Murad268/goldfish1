@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+@media(max-width: 850px) {
+   .profile__page__wrapper {
+      flex-direction: column;
+      row-gap: 30px;
+   }
+   .profile__page__sidebar {
+      max-width: 255px;
+      width: 100%;
+   }
+}
+
+
+
+@media(max-width: 620px) {
+   .profile__page__info__item {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+   }
+   .profile__page__info__item__left__info__name {
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .profile__page__info__item__left__info__date {
+      font-size: 16px;
+      line-height: 19px;
+   }
+}
