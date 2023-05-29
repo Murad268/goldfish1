@@ -5,6 +5,7 @@
       --color2: #2A2A2A;
       --color3: #363636;
       --color4: #F9A43F;
+      --color5: #CACACA
 }
 input[type=checkbox] {
    accent-color: var(--color1);
