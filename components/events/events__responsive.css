@@ -1,0 +1,48 @@
+@media(max-width: 1120px) {
+   .event__box__top__left {
+      flex-direction: column;
+      align-items: flex-start
+   }
+   .event__box {
+      height: max-content;
+   }
+   .event__box__desc__text {
+      max-width: 100%;
+   }
+}
+
+@media(max-width: 720px) {
+   .events__filter__calendar, .events__filter__theme {
+      border: none;
+      box-shadow: none
+   }
+   .events__filter {
+      display: none;
+   }
+   .page__events .section__title i {
+      display: block;
+      cursor: pointer;
+   }
+}
+@media(max-width: 650px) {
+   .event {
+      height: 340px;
+   }
+   .event__box__top__name, .event__box__top__date, .event__box__top__price {
+      font-size: 16px;
+      line-height: 19px;
+   }
+}
+
+
+@media(max-width: 330px) {
+   .events__lists {
+      grid-template-columns: 1fr;
+   }
+   .events__filter {
+      margin-left: -20px;
+   }
+   .event {
+      height: 250px;
+   }
+}
