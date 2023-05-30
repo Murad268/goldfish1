@@ -149,13 +149,16 @@
    border-radius: 9px;
 }
 .catalog__page__filter ul {
-   padding: 24px 24px;
+   padding: 14px 24px;
 }
 
 .filter__trigger {
    margin-bottom: 23px;
 }
-
+.filter__trigger__main {
+  
+   margin-bottom: -16px;
+}
 .filering {
    display: flex;
    column-gap: 7px;

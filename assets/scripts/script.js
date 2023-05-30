@@ -1,342 +1,261 @@
-// $('.header__carusel').slick({
-//    dots: false,
-//    infinite: true,
-//    speed: 300,
-//    slidesToShow: 1,
-//    centerMode: true,
-//    variableWidth: true,
-//    arrows: false,
-//    responsive: [
-//       {
-//          breakpoint: 991,
-//          settings: {
-//             centerMode: false,
-//             variableWidth: false,
-//           }
-//       }
-//    ]
-//  });
+document.addEventListener('DOMContentLoaded', () => {
+	startCarusel(
+		'.header__carusel',
+		{
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true,
+			arrows: false,
+		},
+		[
+			{
+				breakpoint: 991,
+				settings: {
+					centerMode: false,
+					variableWidth: false,
+				},
+			},
+		]
+	)
 
-//  $('.try__carusel.try').slick({
-//    infinite: true,
-//    dots: false,
-//    infinite: true,
-//    speed: 300,
-//    slidesToShow: 4,
-//    prevArrow: $('.try__carusel__left'),
-//    nextArrow: $('.try__carusel__right'),
-//    responsive: [
-//       {
-//          breakpoint: 1240,
-//          settings: {
-//             arrows: false
-//           }
-//       },
-//       {
-//          breakpoint: 991,
-//          settings: {
-//             slidesToShow: 3,
-//           }
-//       },
-//       {
-//          breakpoint: 768,
-//          settings: {
-//             slidesToShow: 2,
-//           }
-//       },
-//       {
-//          breakpoint: 500,
-//          settings: {
-//             slidesToShow: 1,
-//           }
-//       }
-//    ]
-//  });
+	startCarusel(
+		'.try__carusel.try',
+		{
+			infinite: true,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 4,
+			prevArrow: $('.try__carusel__left'),
+			nextArrow: $('.try__carusel__right'),
+		},
+		[
+			{
+				breakpoint: 1240,
+				settings: {
+					arrows: false,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		]
+	)
 
-//  $('.special__try .try__carusel').slick({
-//    infinite: true,
-//    dots: false,
-//    infinite: true,
-//    speed: 300,
-//    slidesToShow: 4,
-//    prevArrow: $('.special__try__left'),
-//    nextArrow: $('.special__try__right'),
-//    responsive: [
-//       {
-//          breakpoint: 1240,
-//          settings: {
-//             arrows: false
-//           }
-//       },
-//       {
-//          breakpoint: 991,
-//          settings: {
-//             slidesToShow: 3,
-//           }
-//       },
-//       {
-//          breakpoint: 768,
-//          settings: {
-//             slidesToShow: 2,
-//           }
-//       },
-//       {
-//          breakpoint: 500,
-//          settings: {
-//             slidesToShow: 1,
-//           }
-//       }
-//    ]
-//  });
+	startCarusel(
+		'.special__try .try__carusel',
+		{
+			infinite: true,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 4,
+			prevArrow: $('.special__try__left'),
+			nextArrow: $('.special__try__right'),
+		},
+		[
+			{
+				breakpoint: 1240,
+				settings: {
+					arrows: false,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		]
+	)
 
-
-//  if(window.innerWidth < 600) {
-//    $('.events__wrapper').slick({
-//       infinite: true,
-//       dots: false,
-//       infinite: true,
-//       speed: 300,
-//       slidesToShow: 1,
-//       arrows: false,
-//       centerMode: false,
-//       variableWidth: true,
-//       // responsive: [
-//       //    {
-//       //       breakpoint: 1240,
-//       //       settings: {
-//       //          arrows: false
-//       //        }
-//       //    },
-//       //    {
-//       //       breakpoint: 991,
-//       //       settings: {
-//       //          slidesToShow: 3,
-//       //        }
-//       //    },
-//       //    {
-//       //       breakpoint: 768,
-//       //       settings: {
-//       //          slidesToShow: 2,
-//       //        }
-//       //    },
-//       //    {
-//       //       breakpoint: 500,
-//       //       settings: {
-//       //          slidesToShow: 1,
-//       //        }
-//       //    }
-//       // ]
-//     });
-//  }
-
-
-
-
-//    $('.moreInfo__wrapper').slick({
-//       infinite: true,
-//       dots: false,
-//       infinite: true,
-//       speed: 300,
-//       slidesToShow: 3,
-//       arrows: false,
-     
-//       responsive: [
-//          {
-//             breakpoint: 930,
-//             settings: {
-//                slidesToShow: 2
-//              }
-//          },
-//          {
-//             breakpoint: 520,
-//             settings: {
-//                slidesToShow: 1
-//              }
-//          }
-//       ]
-//     });
- 
-
-// const triggers = document.querySelectorAll('.filter__trigger')
-// const boxes = document.querySelectorAll('.filter__box')
-// const arrows = document.querySelectorAll('.filter__box i')
-// triggers.forEach((trigger, i) => {
-//    trigger.addEventListener('click', () => {
-//       boxes[i].classList.toggle('active')
-//       arrows[i].classList.toggle('active')
-//    })
-// })
-
-
-// const catalog__page__filtersBoxes = document.querySelectorAll('.catalog__page__filter a')
-
-// catalog__page__filtersBoxes.forEach(box => {
-//    box.addEventListener('click', () => {
-//       catalog__page__filtersBoxes.forEach(box => {
-//          box.classList.remove('active')
-//       })
-//       box.classList.add('active')
-//    })
-// })
-
-
-
-
-//    $(".count__price #myRange").ionRangeSlider({
-     
-//          min: 10,
-//          max: 100,
-//          from: 30,
-//          to: 80,
-//          type: "double",
-//          step: 10,
-//          min_interval: 0,
-//          max_interval: 0,
-//          drag_interval: false,
-//          values: [],
-//          p_values: [],
-//          from_fixed: false,
-//          from_min: null,
-//          from_max: null,
-//          from_shadow: false,
-//          to_fixed: false,
-//          to_min: null,
-//          to_max: null,
-//          to_shadow: false,
-//          force_edges: false,
-//          keyboard: false,
-//          keyboard_step: 5,
-//          grid: false,
-//          grid_num: 4,
-//          grid_snap: false,
-//          hide_min_max: true, 
-//          hide_from_to: true,
-//          decorate_both: true,
-//          values_separator: " — ",
-//          disable: false,
-//          onStart: null,
-//          onChange: null,
-//          onFinish: null,
-//          onUpdate: null
-//    })
-       
-//    $(".count__aut #myRange").ionRangeSlider({
-     
-//       min: 10,
-//       max: 100,
-//       from: 30,
-//       to: 80,
-//       type: "double",
-//       step: 10,
-//       min_interval: 0,
-//       max_interval: 0,
-//       drag_interval: false,
-//       values: [],
-//       p_values: [],
-//       from_fixed: false,
-//       from_min: null,
-//       from_max: null,
-//       from_shadow: false,
-//       to_fixed: false,
-//       to_min: null,
-//       to_max: null,
-//       to_shadow: false,
-//       force_edges: false,
-//       keyboard: false,
-//       keyboard_step: 5,
-//       grid: false,
-//       grid_num: 4,
-//       grid_snap: false,
-//       hide_min_max: true, 
-//       hide_from_to: true,
-//       decorate_both: true,
-//       values_separator: " — ",
-//       disable: false,
-//       onStart: null,
-//       onChange: null,
-//       onFinish: null,
-//       onUpdate: null
-// })
-
-//  const fileringBtn = document.querySelector(".filering")
-//  const filterMenu = document.querySelector('.catalog__page__filter')
-//  fileringBtn.addEventListener('click', () => {
-//    filterMenu.classList.toggle('active')
-//  })
-
-
-
-// const fileringBtn = document.querySelector(".blogs__page .section__title i")
-// const filterMenu = document.querySelector('.blogs__item__filter')
-// fileringBtn.addEventListener('click', () => {
-//   filterMenu.classList.toggle('active')
-// })
-
-//  $(".acordeon").on("click", ".acordeon-cabecera", function() {
-//    $(this).toggleClass("active").next().slideToggle();
-//    $(".acordeon-cabecera i").toggleClass("active__arr");
-//    $(this).toggleClass("acc__title__active")
-//  });
-
-// const fileringBtn = document.querySelector(".page__events .section__title i")
-// const filterMenu = document.querySelector('.events__filter')
-// fileringBtn.addEventListener('click', () => {
-//   filterMenu.classList.toggle('active')
-// })
-
-// document.addEventListener('DOMContentLoaded', function() {
-//    var calendar = new SimpleMultilingualCalendar('#calendar', {
-//      locale: 'en', // Dil seçeneği (örneğin 'en' İngilizce)
-//      // Diğer yapılandırma seçenekleri burada belirtilir
-//    });
-//  });
- 
-
-
-
-//  const calendar = new VanillaCalendar('#vanilla-calendar', {
-//    // Options
-// });
-// calendar.init();
-
- 
-
-
-
-
-
-   $('.try__carusel.try').slick({
-   infinite: true,
-   dots: false,
-   infinite: true,
-   speed: 300,
-   slidesToShow: 4,
-   prevArrow: $('.try__carusel__left'),
-   nextArrow: $('.try__carusel__right'),
-   responsive: [
+  if (window.innerWidth < 600) {
+    startCarusel(
+      '.events__wrapper',
       {
-         breakpoint: 1240,
-         settings: {
-            arrows: false
-          }
+        infinite: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        arrows: false,
+        centerMode: false,
+        variableWidth: true,
       },
-      {
-         breakpoint: 991,
-         settings: {
+      [
+        {
+          breakpoint: 1240,
+          settings: {
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
             slidesToShow: 3,
-          }
-      },
-      {
-         breakpoint: 768,
-         settings: {
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
             slidesToShow: 2,
-          }
-      },
-      {
-         breakpoint: 500,
-         settings: {
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
             slidesToShow: 1,
-          }
-      }
-   ]
- });
+          },
+        },
+      ]
+    )
+  }
+
+
+	startCarusel(
+		'.moreInfo__wrapper',
+		{
+			infinite: true,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 3,
+			arrows: false,
+		},
+		[
+			{
+				breakpoint: 930,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		]
+	)
+
+  openHide(".filter__trigger", '.filter__box', '.filter__box i')
+
+  activateFilterBoxes(".catalog__page__filter a");
+  addFilterToggleEvent(".filering", '.catalog__page__filter');
+  addFilterToggleEvent(".blogs__page .section__title i", '.blogs__item__filter');
+  addFilterToggleEvent(".page__events .section__title i", '.events__filter');
+})
+
+function startCarusel(mainClass, options, responsiveOptions) {
+	$(mainClass).slick({
+		...options,
+		responsive: responsiveOptions,
+	})
+}
+
+function openHide(triggersSelector, boxesSelector, arrowsSelector) {
+  const triggers = document.querySelectorAll(triggersSelector),
+        boxes = document.querySelectorAll(boxesSelector),
+        arrows = document.querySelectorAll(arrowsSelector)
+   
+      triggers.forEach((trigger, i) => {
+   
+        trigger.addEventListener('click', () => {
+
+          boxes[i].classList.toggle('active')
+          arrows[i].classList.toggle('active')
+        })
+      })
+}
+function initializeSlider(selector) {
+  $(selector).ionRangeSlider({
+     min: 10,
+     max: 100,
+     from: 30,
+     to: 80,
+     type: "double",
+     step: 10,
+     min_interval: 0,
+     max_interval: 0,
+     drag_interval: false,
+     hide_min_max: true,
+     hide_from_to: true,
+     decorate_both: true,
+  });
+}
+function activateFilterBoxes(selector) {
+  const catalog__page__filtersBoxes = document.querySelectorAll(selector);
+
+  catalog__page__filtersBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+      catalog__page__filtersBoxes.forEach(box => {
+        box.classList.remove('active');
+      });
+      box.classList.add('active');
+    });
+  });
+}
+
+
+
+
+
+
+
+
+
+
+function addFilterToggleEvent(buttonSelector, menuSelector) {
+  const filterButton = document.querySelector(buttonSelector);
+  const filterMenu = document.querySelector(menuSelector);
+
+  filterButton.addEventListener('click', () => {
+    filterMenu.classList.toggle('active');
+  });
+}
+
+
+
+
+  $(".acordeon").on("click", ".acordeon-cabecera", function() {
+    $(this).toggleClass("active").next().slideToggle();
+    $(".acordeon-cabecera i").toggleClass("active__arr");
+    $(this).toggleClass("acc__title__active")
+  });
+
+
+
+
+
+  const calendar = new VanillaCalendar('#vanilla-calendar');
+ calendar.init();

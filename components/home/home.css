@@ -121,7 +121,7 @@
 
 
 /* try */ 
-.slick-list.draggable {
+.try__carusel.try .slick-list.draggable {
    height: 450px;
 }
 .try {
