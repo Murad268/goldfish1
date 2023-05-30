@@ -1,0 +1,42 @@
+@media(max-width: 1110px) {
+   .ofor__page__wrapper {
+      flex-direction: column-reverse;
+      row-gap: 40px;
+   }
+
+   .ofor__page__block form div input {
+      width: 80%;
+   }
+   .ofer__page__send {
+      margin: 0 auto;
+      float: none !important;
+      margin-top: 30px;
+   }
+   .ofor__page__all__block {
+      width: max-content;
+      margin-top: 30px;
+   }
+   .dots__for__offer {
+      display: none;
+   }
+}
+@media(max-width: 680px) {
+   .ofor__page__block form div {
+      flex-direction: column;
+      row-gap: 30px;
+   }
+
+   .ofor__page__block form div input {
+      width: 100%;
+   }
+}
+
+@media(max-width: 450px) {
+   .ofor__page__all__block {
+      width: 100%;
+   }
+   .ofor__page__all__block {
+      font-size: 16px;
+      line-height: 19px;
+   }
+}
