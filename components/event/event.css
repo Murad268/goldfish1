@@ -1,6 +1,6 @@
 @import '../../assets/styles/main.css';
 @import '../../components/home/home.css';
-
+@import '../../components/home/home__responsive.css';
 .event__page__wrapper {
    display: flex;
    column-gap: 27px;

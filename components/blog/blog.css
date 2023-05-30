@@ -1,0 +1,33 @@
+@import '../../assets/styles/main.css';
+@import '../../components/home/home.css';
+@import '../../components/home/home__responsive.css';
+.blog__page__date {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 17px;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+   margin-top: 12px;
+}
+
+.blog__page .interest__events__title { 
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+   margin-bottom: 23px;
+   margin-top: 85px;
+}
+
+.blog__page__slider__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 200%;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+   margin-top: 85px;
+}

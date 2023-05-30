@@ -121,6 +121,9 @@
 
 
 /* try */ 
+.slick-list.draggable {
+   height: 450px;
+}
 .try {
    height: max-content;
 }

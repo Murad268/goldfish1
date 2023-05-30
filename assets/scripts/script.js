@@ -278,31 +278,65 @@
 //    $(this).toggleClass("acc__title__active")
 //  });
 
-const fileringBtn = document.querySelector(".page__events .section__title i")
-const filterMenu = document.querySelector('.events__filter')
-fileringBtn.addEventListener('click', () => {
-  filterMenu.classList.toggle('active')
-})
+// const fileringBtn = document.querySelector(".page__events .section__title i")
+// const filterMenu = document.querySelector('.events__filter')
+// fileringBtn.addEventListener('click', () => {
+//   filterMenu.classList.toggle('active')
+// })
 
-document.addEventListener('DOMContentLoaded', function() {
-   var calendar = new SimpleMultilingualCalendar('#calendar', {
-     locale: 'en', // Dil seçeneği (örneğin 'en' İngilizce)
-     // Diğer yapılandırma seçenekleri burada belirtilir
-   });
+// document.addEventListener('DOMContentLoaded', function() {
+//    var calendar = new SimpleMultilingualCalendar('#calendar', {
+//      locale: 'en', // Dil seçeneği (örneğin 'en' İngilizce)
+//      // Diğer yapılandırma seçenekleri burada belirtilir
+//    });
+//  });
+ 
+
+
+
+//  const calendar = new VanillaCalendar('#vanilla-calendar', {
+//    // Options
+// });
+// calendar.init();
+
+ 
+
+
+
+
+
+   $('.try__carusel.try').slick({
+   infinite: true,
+   dots: false,
+   infinite: true,
+   speed: 300,
+   slidesToShow: 4,
+   prevArrow: $('.try__carusel__left'),
+   nextArrow: $('.try__carusel__right'),
+   responsive: [
+      {
+         breakpoint: 1240,
+         settings: {
+            arrows: false
+          }
+      },
+      {
+         breakpoint: 991,
+         settings: {
+            slidesToShow: 3,
+          }
+      },
+      {
+         breakpoint: 768,
+         settings: {
+            slidesToShow: 2,
+          }
+      },
+      {
+         breakpoint: 500,
+         settings: {
+            slidesToShow: 1,
+          }
+      }
+   ]
  });
- 
-
-
-
- const calendar = new VanillaCalendar('#vanilla-calendar', {
-   // Options
-});
-calendar.init();
-
- 
-
-
-
-
-
-  
