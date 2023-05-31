@@ -61,19 +61,6 @@
    row-gap: 34px;
 }
 
-.cart__page__info__count {
-   font-family: var(--main-font-family1);
-   font-style: normal;
-   font-weight: 300;
-   font-size: 14px;
-   line-height: 22px;
-   color: var(--color2)
-}
-
-.cart__page__info__count span {
-   font-size: 19px;
-   font-weight: 700; 
-}
 
 .promo label {
    font-style: normal;
@@ -127,19 +114,106 @@
    color: var(--color2);
 }
 
-.cart__page__info__no {
-   color: var(--color4)
+
+
+.order__status__title {
+   font-family: var(--main-font-family1);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: var(--color2);
 }
 
-.cart__page__info .add__cart {
-   padding: 0;
+.cart__page__info__statusess li {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 45px;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+}
+.el__stat {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.el__stat div {
    display: flex;
    justify-content: center;
    align-items: center;
-   max-width: 100% !important;
-   height: 49px !important;
+}
+.el__stat div:first-child {
+   width: 19px;
+   height: 19px;
+   background: var(--color4);
+   border-radius: 100%
 }
 
-.cart__page__info>div {
-   margin-bottom: 15px;
+.el__stat div:nth-child(2) {
+   width: 3px;
+   height: 26px;
+   background: var(--color4);
+}
+.el__stat div:nth-child(4) {
+   width: 3px;
+   height: 26px;
+   background: var(--color4);
+}
+.el__stat div:nth-child(6) {
+   width: 3px;
+   height: 26px;
+   background: var(--color4);
+}
+.el__stat div:nth-child(3) {
+   width: 19px;
+   height: 19px;
+   background: var(--color4);
+   border-radius: 100%
+}
+
+
+.el__stat div:nth-child(5) {
+   width: 19px;
+   height: 19px;
+   background: var(--color4);
+   border-radius: 100%
+}
+
+
+.el__stat div:nth-child(7) {
+   width: 19px;
+   height: 19px;
+   background: var(--color4);
+   border-radius: 100%
+}
+
+.cart__page__info__statusess {
+   margin-top: 11px;
+   display: flex;
+   align-items: center;
+   column-gap: 42px
+}
+
+
+.el__stat__center {
+   width: 11px !important;
+   height: 11px !important;
+   background-color: var(--color1) !important;
+   border-radius: 100%;
+}
+
+.cart__page__info__statusess ul li.active {
+   font-weight: 700;
+}
+
+.ordering__no {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: var(--color2);
+   font-family: var(--main-font-family1);
+   margin-top: 21px;
 }

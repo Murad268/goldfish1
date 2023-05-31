@@ -254,8 +254,6 @@ function addFilterToggleEvent(buttonSelector, menuSelector) {
   });
 
 
+  console.log($('#vanilla-calendar'))
 
 
-
-  const calendar = new VanillaCalendar('#vanilla-calendar');
- calendar.init();
