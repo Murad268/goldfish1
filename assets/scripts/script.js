@@ -265,12 +265,12 @@ function addFilterToggleEvent(buttonSelector, menuSelector) {
 
 
 
-  var field = document.getElementById('events__filter__calendar');
-  var picker = new Pikaday({
-		onSelect: function(date) {
-			 field.value = picker.toString();
-		}
-  });
-  field.parentNode.insertBefore(picker.el, field.nextSibling);
+//   var field = document.getElementById('events__filter__calendar');
+//   var picker = new Pikaday({
+// 		onSelect: function(date) {
+// 			 field.value = picker.toString();
+// 		}
+//   });
+//   field.parentNode.insertBefore(picker.el, field.nextSibling);
 
 

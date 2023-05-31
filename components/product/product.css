@@ -1,0 +1,16 @@
+@import '../../assets/styles/main.css';
+
+.icon-hover:hover {
+   border-color: #3b71ca !important;
+   background-color: white !important;
+   color: #3b71ca !important;
+ }
+ 
+ .icon-hover:hover i {
+   color: #3b71ca !important;
+ }
+
+ .oldprice__item {
+   text-decoration: line-through;
+   font-size: 15px !important;
+ }
