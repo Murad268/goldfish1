@@ -187,15 +187,17 @@ function openHide(triggersSelector, boxesSelector, arrowsSelector) {
   const triggers = document.querySelectorAll(triggersSelector),
         boxes = document.querySelectorAll(boxesSelector),
         arrows = document.querySelectorAll(arrowsSelector)
+		if(triggers.length && boxes.length && arrows.length) {
+			triggers.forEach((trigger, i) => {
    
-      triggers.forEach((trigger, i) => {
-   
-        trigger.addEventListener('click', () => {
+				trigger.addEventListener('click', () => {
+	 
+				  boxes[i].classList.toggle('active')
+				  arrows[i].classList.toggle('active')
+				})
+			 })
+		}
 
-          boxes[i].classList.toggle('active')
-          arrows[i].classList.toggle('active')
-        })
-      })
 }
 function initializeSlider(selector) {
   $(selector).ionRangeSlider({
@@ -215,15 +217,17 @@ function initializeSlider(selector) {
 }
 function activateFilterBoxes(selector) {
   const catalog__page__filtersBoxes = document.querySelectorAll(selector);
+	if(catalog__page__filtersBoxes.length) {
+		catalog__page__filtersBoxes.forEach(box => {
+			box.addEventListener('click', () => {
+			  catalog__page__filtersBoxes.forEach(box => {
+				 box.classList.remove('active');
+			  });
+			  box.classList.add('active');
+			});
+		 });
+	}
 
-  catalog__page__filtersBoxes.forEach(box => {
-    box.addEventListener('click', () => {
-      catalog__page__filtersBoxes.forEach(box => {
-        box.classList.remove('active');
-      });
-      box.classList.add('active');
-    });
-  });
 }
 
 
@@ -238,10 +242,12 @@ function activateFilterBoxes(selector) {
 function addFilterToggleEvent(buttonSelector, menuSelector) {
   const filterButton = document.querySelector(buttonSelector);
   const filterMenu = document.querySelector(menuSelector);
+	if(filterMenu && filterButton)  {
+		filterButton.addEventListener('click', () => {
+			filterMenu.classList.toggle('active');
+		 });
+	}
 
-  filterButton.addEventListener('click', () => {
-    filterMenu.classList.toggle('active');
-  });
 }
 
 
@@ -254,6 +260,17 @@ function addFilterToggleEvent(buttonSelector, menuSelector) {
   });
 
 
-  console.log($('#vanilla-calendar'))
+
+  
+
+
+
+  var field = document.getElementById('events__filter__calendar');
+  var picker = new Pikaday({
+		onSelect: function(date) {
+			 field.value = picker.toString();
+		}
+  });
+  field.parentNode.insertBefore(picker.el, field.nextSibling);
 
 

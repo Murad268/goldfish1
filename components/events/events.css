@@ -147,6 +147,7 @@
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    border-radius: 9px;
    /* padding: 15px; */
+   margin-bottom: 30px !important;
 }
 .events__filter {
    background: var(--color1);
@@ -159,7 +160,9 @@
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    border-radius: 9px;
    padding-left: 40px;
-   background: var(--color1)
+   padding-bottom: 20px;
+   background: var(--color1);
+   margin-top: 30px;
 }
 
 
