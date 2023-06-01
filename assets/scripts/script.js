@@ -304,6 +304,7 @@ catalog__menu__list__li.forEach((category, i) => {
 			item.classList.remove('active')
 		})
 		category__sub__menus[i].classList.add('active')
+		
 	})
 })
 
