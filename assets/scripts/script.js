@@ -274,3 +274,54 @@ function addFilterToggleEvent(buttonSelector, menuSelector) {
 //   field.parentNode.insertBefore(picker.el, field.nextSibling);
 
 
+
+const navbar__links__hamburger = document.querySelector(".navbar__links__hamburger"),
+catalog__menu = document.querySelector(".catalog__menu"),
+catalog__menu__list__li = document.querySelectorAll('.catalog__menu__list>ul>li:not(.main__category__list)'),
+category__sub__menus__li = document.querySelectorAll('.category__sub__menu li');
+
+
+category__sub__menus = document.querySelectorAll('.category__sub')
+main__category__list = document.querySelector(".main__category__list")
+
+		navbar__links__hamburger.addEventListener("click", () => {
+			catalog__menu.classList.add('active');
+		})
+
+		main__category__list.addEventListener("click", () => {
+			catalog__menu.classList.remove('active');
+			category__sub__menus.forEach(item => {
+				item.classList.remove('active')
+			})
+		})
+
+
+
+
+catalog__menu__list__li.forEach((category, i) => {
+	category.addEventListener('mouseover', () => {
+		category__sub__menus.forEach(item => {
+			item.classList.remove('active')
+		})
+		category__sub__menus[i].classList.add('active')
+	})
+})
+
+
+
+
+if(window.innerWidth>991) {
+	category__sub__menus.forEach(menu => {
+		const category__sub__menus__li = menu.querySelectorAll('li');
+		
+		category__sub__menus__li.forEach((item, index) => {
+		  if ((index + 1) % 3 === 0) {
+			 item.style.marginLeft = '-70px';
+			 // İstediğiniz stil veya işlemi buraya ekleyebilirsiniz
+		  }
+		});
+	 });
+	 
+}
+
+

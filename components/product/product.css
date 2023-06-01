@@ -1,5 +1,7 @@
 @import '../../assets/styles/main.css';
-
+body {
+  overflow: hidden;
+}
 .icon-hover:hover {
    border-color: #3b71ca !important;
    background-color: white !important;
@@ -14,3 +16,5 @@
    text-decoration: line-through;
    font-size: 15px !important;
  }
+
+ 
