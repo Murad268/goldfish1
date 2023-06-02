@@ -145,7 +145,7 @@
       height: 308px !important;
    }
    .catalog__wrapper__left .catalog__item__link {
-      height: 120px !important;
+      height: 150px !important;
    }
    .catalog__wrapper__right {
       grid-template-columns: repeat(1, 1fr);
