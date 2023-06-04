@@ -1,5 +1,6 @@
 @import "../../assets/styles/main.css";
-
+@import "../../components/home/home.css";
+@import "../../components/home/home__responsive.css";
 .elegant__header__body__text {
    max-width: 540px;
 }
@@ -159,7 +160,7 @@ header {
 .elegant__try .container {
    position: relative;
 }
-.elegant__try__slider__right, .elegant__try__slider__right__second {
+.elegant__try__slider__right, .elegant__try__slider__right__second, .elegant__try__slider__right__third {
    position: absolute;
    right: -48px;
    top: 210px;
@@ -167,7 +168,7 @@ header {
    cursor: pointer;
 }
 
-.elegant__try__slider__left, .elegant__try__slider__left__second {
+.elegant__try__slider__left, .elegant__try__slider__left__second, .elegant__try__slider__left__third {
    position: absolute;
    left: -48px;
    top: 210px;
@@ -270,6 +271,8 @@ header {
    justify-content: center;
    align-items: center;
    margin-top: -15px;
+   font-family: var(--main-font-family1);
+   color: var(--color2)
 }
 
 .elegant__try__slider {
@@ -338,4 +341,110 @@ header {
    font-family: var(--main-font-family1);
    line-height: 19px;
    margin-top: 5px;
+}
+
+.elegantMoreInfo__wrapper {
+   display: grid;
+   gap: 55px;
+   grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
+}
+.elegantMoreInfo__item {
+   position: relative;
+}
+.elegantMoreInfo__item img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.elegantMoreInfo__item__box__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: var(--color1);
+   font-family: var(--main-font-family1);
+}
+
+.elegantMoreInfo__item__box__desc {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   color: var(--color1);
+   font-family: var(--main-font-family1);
+   line-height: 19px;
+   margin-top: 5px;
+}
+
+.elegantMoreInfo__item__box {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   background: var(--color7);
+   border: 1px solid ;
+   border-radius: 18px;
+   padding: 11px 8px;
+   width: 102%;
+   margin-left: -3px;
+}
+
+.elegantMoreInfo__btn {
+   border: 3px solid var(--color1);
+   border-radius: 11px;
+   height: 71px;
+   max-width: 311px;
+   width: 1005px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: var(--color1);
+   font-family: var(--main-font-family1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 122px auto 0 auto;
+ 
+}
+
+.contacts__info.elegant, .contacts__info__more.elegant {
+   background: radial-gradient(51.77% 51.77% at 50% 48.23%, #314453 0%, rgba(22, 26, 29, 0.56) 100%);
+   padding: 40px 34px;
+}
+.contacts__info.elegant {
+   border-radius: 11px 11px 0 0
+}
+.contacts__info__more.elegant {
+   margin-top: 0px;
+   border-radius: 0 0 11px 11px
+}
+
+.contacts__map {
+   background: #02060B;
+   border-radius: 7px;
+   padding: 18px 21px;
+   height: 100%;
+}
+.contacts__map iframe {
+   height: 100%;
+}
+.contacts * {
+   color: var(--color1) !important
+}
+.contacts__info__more.elegant input, .contacts__info__more.elegant textarea {
+   background: transparent;
+   opacity: 0.33;
+   border: 1px solid #FFFFFF;
+   border-radius: 9px;
+   color: var(--color1)
+}
+
+.contacts__info__more.elegant  .contacts__info__more__form__row button {
+   background: var(--color1);
+   color: var(--color6) !important;
+   cursor: pointer;
+}
+
+.contacts__wrapper {
+   margin-top: 30px;
 }

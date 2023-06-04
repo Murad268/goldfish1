@@ -136,6 +136,44 @@ document.addEventListener('DOMContentLoaded', () => {
 		]
 	)
 	startCarusel(
+		'.elegant__try__slider__third',
+		{
+			infinite: true,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 4,
+			prevArrow: $('.elegant__try__slider__left__third'),
+			nextArrow: $('.elegant__try__slider__right__third'),
+		},
+		[
+			{
+				breakpoint: 1240,
+				settings: {
+					arrows: false,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		]
+	)
+	startCarusel(
 		'.special__try .try__carusel',
 		{
 			infinite: true,

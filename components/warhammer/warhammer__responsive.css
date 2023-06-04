@@ -102,5 +102,8 @@
    .elegant__catalog__slider__item {
       width: 200px;
    }
-
+   .elegantMoreInfo__wrapper {
+      grid-template-columns: 1fr;
+   }
 }
+
