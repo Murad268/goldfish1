@@ -59,7 +59,82 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		]
 	)
-
+	startCarusel(
+		'.elegant__try__slider',
+		{
+			infinite: true,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 4,
+			prevArrow: $('.elegant__try__slider__left'),
+			nextArrow: $('.elegant__try__slider__right'),
+		},
+		[
+			{
+				breakpoint: 1240,
+				settings: {
+					arrows: false,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		]
+	)
+	startCarusel(
+		'.elegant__try__slider__second',
+		{
+			infinite: true,
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 4,
+			prevArrow: $('.elegant__try__slider__left__second'),
+			nextArrow: $('.elegant__try__slider__right__second'),
+		},
+		[
+			{
+				breakpoint: 1240,
+				settings: {
+					arrows: false,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		]
+	)
 	startCarusel(
 		'.special__try .try__carusel',
 		{
@@ -167,7 +242,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		]
 	)
-
+	startCarusel(
+      '.elegant__events__slider',
+      {
+        infinite: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        arrows: false,
+    
+      },
+      [
+        
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        
+      ]
+    )
   openHide(".filter__trigger", '.filter__box', '.filter__box i')
 
   activateFilterBoxes(".catalog__page__filter a");
@@ -275,54 +371,103 @@ function addFilterToggleEvent(buttonSelector, menuSelector) {
 
 
 
-const navbar__links__hamburger = document.querySelector(".navbar__links__hamburger"),
-catalog__menu = document.querySelector(".catalog__menu"),
-catalog__menu__list__li = document.querySelectorAll('.catalog__menu__list>ul>li:not(.main__category__list)'),
-category__sub__menus__li = document.querySelectorAll('.category__sub__menu li');
+// const navbar__links__hamburger = document.querySelector(".navbar__links__hamburger"),
+// catalog__menu = document.querySelector(".catalog__menu"),
+// catalog__menu__list__li = document.querySelectorAll('.catalog__menu__list>ul>li:not(.main__category__list)'),
+// category__sub__menus__li = document.querySelectorAll('.category__sub__menu li');
 
 
-category__sub__menus = document.querySelectorAll('.category__sub')
-main__category__list = document.querySelector(".main__category__list")
+// category__sub__menus = document.querySelectorAll('.category__sub')
+// main__category__list = document.querySelector(".main__category__list")
 
-		navbar__links__hamburger.addEventListener("click", () => {
-			catalog__menu.classList.add('active');
-		})
+// 		navbar__links__hamburger.addEventListener("click", () => {
+// 			catalog__menu.classList.add('active');
+// 		})
 
-		main__category__list.addEventListener("click", () => {
-			catalog__menu.classList.remove('active');
-			category__sub__menus.forEach(item => {
-				item.classList.remove('active')
+// 		main__category__list.addEventListener("click", () => {
+// 			catalog__menu.classList.remove('active');
+// 			category__sub__menus.forEach(item => {
+// 				item.classList.remove('active')
+// 			})
+// 		})
+
+
+
+
+// catalog__menu__list__li.forEach((category, i) => {
+// 	category.addEventListener('mouseover', () => {
+// 		category__sub__menus.forEach(item => {
+// 			item.classList.remove('active')
+// 		})
+// 		category__sub__menus[i].classList.add('active')
+		
+// 	})
+// })
+
+
+
+
+// if(window.innerWidth>991) {
+// 	category__sub__menus.forEach(menu => {
+// 		const category__sub__menus__li = menu.querySelectorAll('li');
+		
+// 		category__sub__menus__li.forEach((item, index) => {
+// 		  if ((index + 1) % 3 === 0) {
+// 			 item.style.marginLeft = '-70px';
+// 			 // İstediğiniz stil veya işlemi buraya ekleyebilirsiniz
+// 		  }
+// 		});
+// 	 });
+	 
+// }
+
+
+
+
+
+const sliderWidth = document.querySelector(".elegant__catalog__slider").clientWidth,
+  		slidersCount = document.querySelectorAll(".elegant__catalog__slider__item").length,
+		filtersElement = document.querySelectorAll(".elegant__catalog__filter li"),
+		inner = document.querySelector(".elegant__catalog__slider__inner");
+let offset = 0
+
+		filtersElement.forEach(element => {
+			element.addEventListener('click', () => {
+				let id = element.getAttribute('data-id');
+				offset = sliderWidth * id;
+				inner.style.transform = `translateX(-${offset}px)`
 			})
 		})
 
+	
 
+var hammertime = new Hammer(inner);
 
+hammertime.on('swipe', function(event) {
+  // Swipe işlemi gerçekleştiğinde yapılacak işlemler
+  if (event.direction === Hammer.DIRECTION_LEFT) {
+	next()
+  }
+  if (event.direction === Hammer.DIRECTION_RIGHT) {
+	prev()
+  }
+});
 
-catalog__menu__list__li.forEach((category, i) => {
-	category.addEventListener('mouseover', () => {
-		category__sub__menus.forEach(item => {
-			item.classList.remove('active')
-		})
-		category__sub__menus[i].classList.add('active')
-		
-	})
-})
-
-
-
-
-if(window.innerWidth>991) {
-	category__sub__menus.forEach(menu => {
-		const category__sub__menus__li = menu.querySelectorAll('li');
-		
-		category__sub__menus__li.forEach((item, index) => {
-		  if ((index + 1) % 3 === 0) {
-			 item.style.marginLeft = '-70px';
-			 // İstediğiniz stil veya işlemi buraya ekleyebilirsiniz
-		  }
-		});
-	 });
-	 
+function next() {
+	if(offset <= (sliderWidth * (slidersCount-2))) {
+		offset += sliderWidth;
+	} else {
+		offset = 0
+	}
+	inner.style.transform = `translateX(-${offset}px)`
 }
 
 
+function prev() {
+	if(offset <= 0) {
+		offset = (sliderWidth * (slidersCount-1));
+	} else {
+		offset -= sliderWidth
+	}
+	inner.style.transform = `translateX(-${offset}px)`
+}

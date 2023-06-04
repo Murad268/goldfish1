@@ -1,0 +1,106 @@
+@media(max-width: 1220px) {
+   .elegant__try__slider__right, .elegant__try__slider__left {
+      display: none;
+   }
+}
+@media(max-width: 1110px) {
+   .elegant__catalog__filter {
+      display: none;
+   }
+   .elegant__catalog__slider {
+      width: 800px;
+      margin: 0 auto;
+   }
+   .elegant__catalog__slider__item {
+      width: 800px;
+   }
+   .elegant__catalog__slider__item__image {
+      width: 100%;
+   }
+
+}
+@media(max-width: 950px) {
+   .elegant__try__slider__item__image {
+      width: 80%;
+   }
+}
+@media(max-width: 850px) {
+   .elegant__catalog__slider {
+      width: 600px;
+   }
+   .elegant__catalog__slider__item {
+      width: 600px;
+   }
+   .elegant__catalog__slider__item__image {
+      height: auto;
+   }
+}
+
+@media(max-width: 768px) {
+   .elegant__events__slider__item__top__left {
+      flex-direction: column;
+   }
+}
+@media(max-width: 650px) {
+   .elegant__try__slider__item__image {
+      width: 70%;
+   }
+   .elegant__catalog__slider {
+      width: 400px;
+   }
+   .elegant__catalog__slider__item {
+      width: 400px;
+   }
+
+   .elegant__catalog__slider__item p {
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .elegant__header__body__text__title {
+      font-size: 26px;
+   line-height: 35px;
+   }
+   .elegant__header__body__text__subtitle {
+      font-size: 16px;
+      line-height: 23px;
+   }
+   .elegant__header__body__text__btn {
+      font-size: 14px;
+      line-height: 16px;
+      width: 136.24px;
+      height: 31.79px;
+   }
+}
+@media(max-width: 500px) {
+   .elegant__try__slider__item__image {
+      width: 40%;
+   }
+}
+@media(max-width: 480px) {
+   .elegant__catalog__slider {
+      width: 290px;
+   }
+   .elegant__catalog__slider__item {
+      width: 290px;
+   }
+   .elegant__catalog__slider__item p {
+      text-align: left;
+   }
+}
+@media(max-width: 410px) {
+   .elegant__try__slider__item__image {
+      width: 60%;
+   }
+}
+@media(max-width: 340px) {
+   .elegant__try__slider__item__image {
+      width: 80%;
+   }
+   .elegant__catalog__slider {
+      width: 200px;
+   }
+   .elegant__catalog__slider__item {
+      width: 200px;
+   }
+
+}

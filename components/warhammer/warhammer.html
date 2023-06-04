@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../assets/styles/_vanilla-calendar.min.css" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+   <link rel="stylesheet" href="./warhammer.css">
+   <link rel="stylesheet" href="./warhammer__responsive.css">
+   <title>Document</title>
+</head>
+
+<body style="background: #061017" >
+   <header class="header">
+      <div class="header__top">
+         <div class="container">
+            <div class="header__top__wrapper">
+               <div class="header__hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <div class="header__top__left">
+                  <div class="header__top__logo">
+                     <a href="">
+                        <img src="../../assets/icons/header/header__top/l3 1.png" alt="">
+                     </a>
+                  </div>
+                  <div class="header__top__search">
+                     <input placeholder="Найти игру" type="text">
+                     <img src="../../assets/icons/header/header__top/akar-icons_search.png" alt=""
+                        class="header__top__search__icon">
+                  </div>
+               </div>
+               <div class="header__top__right">
+                  <div class="header__top__num">
+                     <img src="../../assets/icons/header/header__top/icomoon-free_phone.png" alt="">
+                     <a href="">+7 (495) 911-10-11</a>
+                  </div>
+                  <div class="header__top__user">
+                     <a href="" class="header__top__user__account">
+                        <img src="../../assets/icons/header/header__top/Vector.png" alt="">
+                     </a>
+                     <a href="" class="header__top__user__cart">
+                        <img src="../../assets/icons/header/header__top/Group (1).png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <nav class="navbar elegant__navbar">
+         <div class="container">
+            <div class="navbar__wrapper">
+               <div class="navbar__links">
+                  <div class="navbar__links__hamburger">
+                     <div class="navbar__links__hamburger__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                     <a>Каталог</a>
+                  </div>
+                  <ul>
+                     <li><a href="">Wharhammer</a></li>
+                     <li><a href="">Magic:the Cathering</a></li>
+                     <li><a href="">Мероприятия</a></li>
+                     <li><a href="">О центре</a></li>
+                     <li><a href="">Контакты</a></li>
+                  </ul>
+               </div>
+               <div class="navbar__social">
+                  <ul>
+                     <li><a href=""><img src="../../assets/icons/header/navigation/bi_instagram.png" alt=""></a></li>
+                     <li><a href=""><img src="../../assets/icons/header/navigation/vk.png" alt=""></a></li>
+                     <li><a href=""><img src="../../assets/icons/header/navigation/fb.png" alt=""></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="catalog__menu">
+         <div class="container">
+            <div class="catalog__menu__list">
+               <ul>
+                  <li class="main__category__list"><a class=""> <span>✕</span> <span>Все категории</span></a></li>
+                  <li>
+                     <a href=""><span>Настольные игры</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Настольные игры</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href=""><span>Warhammer 40000</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Warhammer 40000</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href=""><span>Magic: the Gathering</span><i class="fa fa-angle-right"
+                           aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Magic: the Gathering</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href=""><span>Аксессуары для игр</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Аксессуары для игр</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href=""><span>Краски</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Краски</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href=""><span>Товары для детей</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Товары для детей</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a href=""><span>Аксессуары моделизма</span><i class="fa fa-angle-right"
+                           aria-hidden="true"></i></a>
+                     <div class="category__sub">
+                        <h3>Аксессуары моделизма</h3>
+                        <ul class="category__sub__menu">
+                           <li><a href="">Альтернативные миниатюры (69)</a></li>
+                           <li><a href="">Warhammer 40k (400)</a></li>
+                           <li><a href="">Age of Sigmar (263)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Nercomunda (21)</a></li>
+                           <li><a href="">Lord of the Rings(16)</a></li>
+                           <li><a href="">Blood Bowl (28)</a></li>
+                           <li><a href="">Titanicus (4)</a></li>
+                           <li><a href="">Warcry (49)</a></li>
+                           <li><a href="">Warhammer: Underworlds (22)</a></li>
+                           <li><a href="">Killtem (4)</a></li>
+                        </ul>
+                     </div>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container search__bottom__container">
+         <div class="header__top__search search__bottom">
+            <input placeholder="Найти игру" type="text">
+            <img src="../../assets/icons/header/header__top/akar-icons_search.png" alt=""
+               class="header__top__search__icon">
+         </div>
+      </div>
+
+      <div style="background: url('../../assets/images/warhammer/image\ 26.png'); background-size: cover;" class="elegant__header__body">
+         <div class="container">
+            <div class="elegant__header__body__text">
+               <h1 class="elegant__header__body__text__title">Не просто магазин</h1>
+               <div class="elegant__header__body__text__subtitle">
+                  Любите играть в «Magic: the gathering» ? Играйте вместе с нами в нашем игровом клубе «GoldFish». Также мы обучаем новичков
+               </div>
+               <a href="" class="elegant__header__body__text__btn">Подробнее</a>
+            </div>
+         </div>
+      </div>
+
+   </header>
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+   <section class="elegant__catalog">
+      <div class="container">
+         <h4 class="section__title elegant">
+            Каталог игр «Magic: the gathering» 
+         </h4>
+         <div class="elagant__slider__wrapper">
+            <div class="elegant__catalog__filter">
+               <ul>
+                  <li data-id="0">Иннистрад: Полночна Охота</li>
+                  <li data-id="1">Приключения в Забытых</li>
+                  <li data-id="2">Королевствах</li>
+                  <li data-id="3">Выбор Равники</li>
+                  <li data-id="4">Гильдии Равники</li>
+                  <li data-id="5">Война искры</li>
+                  <li data-id="6">Базовый выпуск 2021</li>
+                  <li data-id="7">Престол Элдраина</li>
+                  <li data-id="8">Терос: За Порогом Смерти</li>
+                  <li data-id="9">Икория. Логово исполинов</li>
+                  <li data-id="10">Расцвет Зендикара</li>
+               </ul>
+            </div>
+            <div class="elegant__catalog__slider">
+               <div class="elegant__catalog__slider__inner">
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+                  <div  class="elegant__catalog__slider__item">
+                     <div class="elegant__catalog__slider__item__image">
+                        <img src="../../assets/images/warhammer/image 84.png" alt="">
+                     </div>
+                     <p>Вселенная Magic: the Gathering – это множество миров, каждый из которых сильно отличается от остальных. Не стал исключением и «Калдхайм» – новый мир Magic: the Gathering, на создание которого Wizards вдохновили скандинавские мифы и легенды. Впрочем, разумеется, новому миру есть что предложить игрокам, кроме викингов и рогатых шлемов</p>
+                     <a href="" class="elegant__catalog__slider__item___btn">
+                        Узнать больше
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> 
+   </section>
+
+   <section class="elegant__try">
+      <div class="container">
+         <h3 class="section__title elegant">Специальные предложения</h3>
+         <div class="elegant__try__slider__right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+         <div class="elegant__try__slider__left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+         <div class="elegant__try__slider">
+            <div class="elegant__try__slider__item">
+              <div class="elegant__try__slider__item__bg">
+                  <div class="elegant__try__slider__item__colored__bg">
+                     <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                        Командир: гнев земли</div>
+                        <div class="elegant__try__slider__item__image">
+                           <img src="../../assets/images/warhammer/image 114.png" alt="">
+                        </div>
+                        <div class="elegant__try__slider__item__price">
+                           4290 ₽ 
+                        </div>
+                        <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                        <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                  </div>
+              </div>
+            </div>
+            <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+             <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+             <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+             <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+         </div>
+      </div>
+   </section>
+   <section class="elegant__try">
+      <div class="container">
+         <h3 class="section__title elegant">Успей купить</h3>
+         <div class="elegant__try__slider__right__second"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+         <div class="elegant__try__slider__left__second"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+         <div class="elegant__try__slider__second">
+            <div class="elegant__try__slider__item">
+              <div class="elegant__try__slider__item__bg">
+                  <div class="elegant__try__slider__item__colored__bg">
+                     <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                        Командир: гнев земли</div>
+                        <div class="elegant__try__slider__item__image">
+                           <img src="../../assets/images/warhammer/image 114.png" alt="">
+                        </div>
+                        <div class="elegant__try__slider__item__price">
+                           4290 ₽ 
+                        </div>
+                        <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                        <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                  </div>
+              </div>
+            </div>
+            <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+             <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+             <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+             <div class="elegant__try__slider__item">
+               <div class="elegant__try__slider__item__bg">
+                   <div class="elegant__try__slider__item__colored__bg">
+                      <div class="elegant__try__slider__item__title">MTG.Расцвет Зендикара.
+                         Командир: гнев земли</div>
+                         <div class="elegant__try__slider__item__image">
+                            <img src="../../assets/images/warhammer/image 114.png" alt="">
+                         </div>
+                         <div class="elegant__try__slider__item__price">
+                            4290 ₽ 
+                         </div>
+                         <a href="" class="elegant__try__slider__item__btn">В корзину</a>
+                         <a class="elegant__try__slider__item__oneclick">Купить в 1 клик →</a>
+                   </div>
+               </div>
+             </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="elegant__events">
+      <div class="container">
+         <h5 class="section__title elegant">Ближайшие мероприятия</h5>
+         <div class="elegant__events__slider">
+            <div class="elegant__events__slider__item">
+               <img src="../../assets/images/warhammer/image 106.png" alt="">
+               <div class="elegant__events__slider__item__box">
+                  <div class="elegant__events__slider__item__top">
+                     <div class="elegant__events__slider__item__top__left">
+                        <div class="elegant__events__slider__item__top__name">Halloween c GoldFish</div>
+                        <div class="elegant__events__slider__item__top__date">31 октября 2021 г. 19:00</div>
+                     </div>
+                     <div>
+                        350$
+                     </div>
+                  </div>
+                  <div class="elegant__events__slider__item__text">
+                     <p>Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что
+                        будет с тем,кого убили..</p>
+                     <div>
+                        →
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="elegant__events__slider__item">
+               <img src="../../assets/images/warhammer/image 106.png" alt="">
+               <div class="elegant__events__slider__item__box">
+                  <div class="elegant__events__slider__item__top">
+                     <div class="elegant__events__slider__item__top__left">
+                        <div class="elegant__events__slider__item__top__name">Halloween c GoldFish</div>
+                        <div class="elegant__events__slider__item__top__date">31 октября 2021 г. 19:00</div>
+                     </div>
+                     <div>
+                        350$
+                     </div>
+                  </div>
+                  <div class="elegant__events__slider__item__text">
+                     <p>Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что
+                        будет с тем,кого убили..</p>
+                     <div>
+                        →
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="elegant__events__slider__item">
+               <img src="../../assets/images/warhammer/image 106.png" alt="">
+               <div class="elegant__events__slider__item__box">
+                  <div class="elegant__events__slider__item__top">
+                     <div class="elegant__events__slider__item__top__left">
+                        <div class="elegant__events__slider__item__top__name">Halloween c GoldFish</div>
+                        <div class="elegant__events__slider__item__top__date">31 октября 2021 г. 19:00</div>
+                     </div>
+                     <div>
+                        350$
+                     </div>
+                  </div>
+                  <div class="elegant__events__slider__item__text">
+                     <p>Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что
+                        будет с тем,кого убили..</p>
+                     <div>
+                        →
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="elegant__events__slider__item">
+               <img src="../../assets/images/warhammer/image 106.png" alt="">
+               <div class="elegant__events__slider__item__box">
+                  <div class="elegant__events__slider__item__top">
+                     <div class="elegant__events__slider__item__top__left">
+                        <div class="elegant__events__slider__item__top__name">Halloween c GoldFish</div>
+                        <div class="elegant__events__slider__item__top__date">31 октября 2021 г. 19:00</div>
+                     </div>
+                     <div>
+                        350$
+                     </div>
+                  </div>
+                  <div class="elegant__events__slider__item__text">
+                     <p>Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что
+                        будет с тем,кого убили..</p>
+                     <div>
+                        →
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="elegant__events__slider__item">
+               <img src="../../assets/images/warhammer/image 106.png" alt="">
+               <div class="elegant__events__slider__item__box">
+                  <div class="elegant__events__slider__item__top">
+                     <div class="elegant__events__slider__item__top__left">
+                        <div class="elegant__events__slider__item__top__name">Halloween c GoldFish</div>
+                        <div class="elegant__events__slider__item__top__date">31 октября 2021 г. 19:00</div>
+                     </div>
+                     <div>
+                        350$
+                     </div>
+                  </div>
+                  <div class="elegant__events__slider__item__text">
+                     <p>Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что
+                        будет с тем,кого убили..</p>
+                     <div>
+                        →
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+
+      <div class="footer__top">
+         <div class="container">
+            <div class="footer__top__wrapper">
+               <div class="footer__top__left">
+                  <div class="footer__top__left__logo">
+                     <a href="">
+                        <img src="../../assets/icons/header/header__top/l3 1.png" alt="">
+                     </a>
+                  </div>
+                  <div class="footer__top__left__adress">
+                     г. Москва ст.м. Таганская
+                     Малый Дровяной переулок 6
+                  </div>
+               </div>
+               <div class="footer__el">
+                  <div class="footer__top__links">
+                     <ul class="footer__catalog">
+                        <div class="footer__list__title">Каталог</div>
+                        <li><a href="">
+                              Warhammer 40000
+                           </a></li>
+                        <li><a href="">Настольные игры</a></li>
+                        <li><a href="">Magic: the Gathering</a></li>
+                        <li><a href="">Аксессуары для игр</a></li>
+                        <li><a href=""> Краски</a></li>
+                        <li><a href="">Аксессуары для
+                              моделизма</a></li>
+                     </ul>
+                     <ul class="footer__rules">
+                        <div class="footer__list__title">Правила клуба</div>
+                        <li><a href="">Мероприятия</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Блог</a></li>
+                     </ul>
+                     <ul class="footer__order">
+                        <div class="footer__list__title">Оплата и достака</div>
+                        <li><a href="">Гарантия и возврат</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer__right">
+                     <div class="footer__top__left__adress__none">
+                        г. Москва ст.м. Таганская
+                        Малый Дровяной переулок 6
+                     </div>
+                     <a class="footer__right__btn" href="">Заказать звонок</a>
+                     <a href="" class="footer__right__phone">+7 (495) 911-10-11</a>
+                     <a href="" class="footer__right__email">msk@magicgoldfish.ru</a>
+                     <div class="footer__right__social">
+                        <a href=""><img src="../../assets/icons/header/navigation/bi_instagram.png" alt=""></a>
+                        <a href=""><img src="../../assets/icons/header/navigation/vk.png" alt=""></a>
+                        <a href=""><img src="../../assets/icons/header/navigation/fb.png" alt=""></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__hr"></div>
+      <div class="footer__bottom">
+         <div class="container">
+            <div class="footer__bottom__wrapper">
+               <div class="footer__bottom__link">
+                  © 2021 MagicGoldFish.ru
+                  <a href="">Политика конфиденциальности</a>
+               </div>
+               <div class="footer__bottom__cards">
+                  <div class="footer__bottom__card"><img src="../../assets/icons/footer/Group (1).png" alt=""></div>
+                  <div class="footer__bottom__card"><img src="../../assets/icons/footer/Vector (1).png" alt=""></div>
+                  <div class="footer__bottom__card"><img src="../../assets/icons/footer/Group (2).png" alt=""></div>
+               </div>
+               <div class="footer__bottom__link">
+                  Содержимое не является публичной офертой
+                  <a href="">Пользовательское соглашение</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<!-- Hammer.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+
+   <!-- <script src="../../assets/scripts/vanilla-calendar.min.js"></script> -->
+   <script src="../../assets/scripts/script.js"></script>
+</body>
+
+</html>
